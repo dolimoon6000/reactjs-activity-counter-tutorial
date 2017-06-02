@@ -2,6 +2,7 @@ import '../stylesheets/ui.scss'
 import Terrain from 'react-icons/lib/md/terrain'
 import SnowFlake from 'react-icons/lib/ti/weather-snow'
 import Calendar from 'react-icons/lib/fa/calendar'
+import PropTypes from 'prop-types'
 
 const percentFromDecimal = (decimal) => {
     return ((decimal * 100) + '%')
@@ -33,3 +34,10 @@ export const SkiDayCount = ({ total=70, powder=20, backcountry=15, goal=100 }) =
         </div>
     </div>
 )
+
+SkiDayCount.propTypes = {
+    total: PropTypes.number,
+    goal: PropTypes.number,
+    backcountry: PropTypes.number,
+    powder: PropTypes.number
+}
