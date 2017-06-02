@@ -3,16 +3,21 @@ import '../stylesheets/ui.scss'
 
 export const SkiDayCount = React.createClass({
     render () {
+        const { total, powder, backcountry } = this.props
+
         return (
             <div className="ski-day-count">
                 <div className="total-days">
-                    <span>5 days</span>
+                    <span>{total}</span>
+                    <span>days</span>
                 </div>
                 <div className="powder-days">
-                    <span>2 days</span>
+                    <span>{powder}</span>
+                    <span>days</span>
                 </div>
                 <div className="backcountry-days">
-                    <span>1 hiking day</span>
+                    <span>{backcountry}</span>
+                    <span>days</span>
                 </div>
             </div>
         )
