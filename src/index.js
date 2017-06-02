@@ -1,7 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { hello, goodbye } from './lib'
-import { SkiDayList } from './components/SkiDayList'
+import './stylesheets/ui.scss'
 import { App } from './components/App'
 import { Whoops404 } from './components/Whoops404'
 
